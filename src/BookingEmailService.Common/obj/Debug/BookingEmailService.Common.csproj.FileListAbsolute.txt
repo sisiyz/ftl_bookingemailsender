@@ -4,3 +4,9 @@ C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.Common\obj\Debu
 C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.Common\obj\Debug\BookingEmailService.Common.dll
 C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.Common\obj\Debug\BookingEmailService.Common.pdb
 C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.Common\bin\Debug\log4net.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.Common\bin\Debug\BookingEmailService.Common.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.Common\bin\Debug\BookingEmailService.Common.pdb
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.Common\bin\Debug\log4net.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.Common\obj\Debug\BookingEmailService.Common.csprojResolveAssemblyReference.cache
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.Common\obj\Debug\BookingEmailService.Common.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.Common\obj\Debug\BookingEmailService.Common.pdb

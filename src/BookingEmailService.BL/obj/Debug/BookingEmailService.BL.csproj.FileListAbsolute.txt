@@ -1,25 +1,12 @@
-C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\BookingEmailService.BL.dll
-C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\BookingEmailService.BL.pdb
-C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.BL\obj\Debug\BookingEmailService.BL.csprojResolveAssemblyReference.cache
-C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.BL\obj\Debug\BookingEmailService.BL.dll
-C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.BL\obj\Debug\BookingEmailService.BL.pdb
-C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\BookingEmailService.Common.dll
-C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\BookingEmailService.DAL.dll
-C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\log4net.dll
-C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\BookingEmailService.Common.pdb
-C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.BL\bin\Debug\BookingEmailService.DAL.pdb
-<<<<<<< HEAD
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\BookingEmailService.BL.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\BookingEmailService.BL.pdb
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\BookingEmailService.Common.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\BookingEmailService.DAL.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\log4net.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\NReco.PdfGenerator.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\BookingEmailService.Common.pdb
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\BookingEmailService.DAL.pdb
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\NReco.PdfGenerator.xml
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\obj\Debug\BookingEmailService.BL.csprojResolveAssemblyReference.cache
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\obj\Debug\BookingEmailService.BL.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\obj\Debug\BookingEmailService.BL.pdb
-C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\NReco.PdfGenerator.dll
-C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.BL\bin\Debug\NReco.PdfGenerator.xml
-=======
->>>>>>> origin/master
