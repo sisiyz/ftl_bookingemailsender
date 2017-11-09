@@ -367,6 +367,62 @@ namespace BookingEmailService.DAL
             return email_address;
         }
 
+        public string GetEmailSubject(OrderDeatils objOrderDetails)
+        {
+            string email_subject = "";
+
+            string trip_date = objOrderDetails.trip_date_time.ToShortDateString();
+            string trip_24time = Convert.ToDateTime(objOrderDetails.trip_date_time).ToString("HH:mm");
+            string trip_12time = objOrderDetails.trip_date_time.ToShortTimeString();
+
+            try
+            {
+                switch (objOrderDetails.email_type.ToUpper())
+                {
+                    case "NEW":
+                        email_subject = objOrderDetails.company_name + " New Booking: Passenger " + objOrderDetails.passenger + " " + trip_date + " " + trip_24time + " (" + trip_12time + ") with " + objOrderDetails.vendor_name;
+                        break;
+                    case "MODIFY":
+                        email_subject= objOrderDetails.company_name + " Revised Booking: Passenger " + objOrderDetails.passenger + " " + trip_date + " " + trip_24time + " (" + trip_12time + ") with " + objOrderDetails.vendor_name;
+                        break;
+                    case "CANCEL":
+                        email_subject= objOrderDetails.company_name + " Canceled Booking: Passenger " + objOrderDetails.passenger + " " + trip_date + " " + trip_24time + " (" + trip_12time + ") with " + objOrderDetails.vendor_name;
+                        break;
+                    default:
+                        email_subject = objOrderDetails.company_name + " New Booking: Passenger " + objOrderDetails.passenger + " " + trip_date + " " + trip_24time + " (" + trip_12time + ") with " + objOrderDetails.vendor_name;
+                        break;
+                }
+
+            }
+            catch (Exception ex)
+            {
+            }
+
+            return email_subject;
+        }
+
+        public void InsertToEmailTable(string confirmation_no, int booking_centralise_email_monitor_id, string ftp_email_path, string sSendInfo, string strFileName_attach, string sSubject, string company)
+        {
+            string sqlStr = @"sp_Send_Email_disp";
+            SqlCommand cmd = new SqlCommand(sqlStr, _Context);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.AddWithValue("@FileName", ftp_email_path);
+            cmd.Parameters.AddWithValue("@EmailAddress", sSendInfo);
+            cmd.Parameters.AddWithValue("@FileName_Attach", strFileName_attach);
+            cmd.Parameters.AddWithValue("@Subject", sSubject);
+            cmd.Parameters.AddWithValue("@Company", company);
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                UpdateProcessingStatus(confirmation_no, booking_centralise_email_monitor_id, "Application Error");
+            }
+        }
+
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)
         {

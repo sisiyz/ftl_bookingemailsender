@@ -8,13 +8,18 @@ using BookingEmailService.DAL;
 using System.Net;
 using System.Configuration;
 using System.IO;
+using log4net;
+using NReco.PdfGenerator;
 
 namespace BookingEmailService.BL
 {
     public class Email
     {
+        private static readonly ILog log = LogManager.GetLogger("log");
         private string builder = "";
-        string local_email_path = ConfigurationManager.AppSettings["local_email_path"];
+        //string ftp_username = ConfigurationManager.AppSettings["ftp_username"];
+        //string ftp_password = ConfigurationManager.AppSettings["ftp_password"];
+
         #region GETHTML
         public string GetReportHtml(OrderDeatils objOrdertails)
         {
@@ -234,30 +239,53 @@ namespace BookingEmailService.BL
 
         #region TransferEmail
 
-        public void TransferEmail(OrderDeatils objOrderDetails, string builder)
+        public void TransferEmail(OrderDeatils objOrderDetails, string builder, string email_format, int booking_centralise_email_monitor_id)
         {
             WebClient client = new WebClient();
             DBFunctions objDBFunctions = new DBFunctions();
             string directory = "";
-            string company = "";
             string sSubject = "";
-            string sSendInfo = "sisi.han@transdev.com";
-            string strFileName_attach = "";
+            string sSendInfo = "";
+            //string strFileName_attach = "";
+            string ftp_name_path = "";
+
+            string local_email_path = ConfigurationManager.AppSettings["local_email_path"];
+            local_email_path = email_format == "HTML" ? local_email_path + ".html" : local_email_path + ".pdf";
 
             try
             {
                 directory = objDBFunctions.GetDirectoryPath(objOrderDetails.company);
-                string html_name_path = directory + "TT_" + objOrderDetails.confirmation_no + ".html";
-
+                sSubject = objDBFunctions.GetEmailSubject(objOrderDetails);
                 sSendInfo = objDBFunctions.GetEmailAddress(objOrderDetails.confirmation_no);
-                sSendInfo = "sisi.han@tandemttsi.com";
 
-                //write file to local
-                File.WriteAllText(local_email_path, builder.ToString());
-                //client.Credentials = NetworkCredential();
+                ftp_name_path = email_format == "HTML" ? directory + "TT_" + objOrderDetails.confirmation_no + ".html" : directory + "TT_" + objOrderDetails.confirmation_no + ".pdf";
+                sSendInfo = "sisi.han@tandemttsi.com";
+                //email_format = "HTML";
+
+                if (email_format == "HTML")
+                {
+                    //write HTML file to local
+                    File.WriteAllText(local_email_path, builder.ToString());
+                }
+                else
+                {
+                    //write PDF file to local
+                    var htmlToPdf = new NReco.PdfGenerator.HtmlToPdfConverter();
+                    var pdfBytes = htmlToPdf.GeneratePdf(builder);
+                    File.WriteAllBytes(local_email_path, pdfBytes);
+                }
+
+                //FTP Password
+                //client.Credentials = new NetworkCredential(ftp_username, ftp_password);
+                client.Credentials = CredentialCache.DefaultCredentials;
 
                 //upload file to ftp
-                client.UploadFile(html_name_path, "STOR", local_email_path);
+                client.UploadFile(ftp_name_path, "STOR", local_email_path);
+
+                //ftp_name_path = "\\\\cluster-1fs\\Aleph_share\\EmailConf\\FT_1700458258.pdf";
+
+                //Insert to Email Table
+                objDBFunctions.InsertToEmailTable(objOrderDetails.confirmation_no, booking_centralise_email_monitor_id, ftp_name_path, sSendInfo, ftp_name_path, sSubject, objOrderDetails.company);
             }
             catch (Exception ex)
             {

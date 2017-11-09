@@ -6,3 +6,11 @@ C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailService.DAL\obj\Debug\B
 C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.DAL\bin\Debug\BookingEmailService.Common.dll
 C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.DAL\bin\Debug\log4net.dll
 C:\Users\sisi.han\Desktop\BookingEmailSender\BookingEmailService.DAL\bin\Debug\BookingEmailService.Common.pdb
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\bin\Debug\BookingEmailService.DAL.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\bin\Debug\BookingEmailService.DAL.pdb
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\bin\Debug\BookingEmailService.Common.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\bin\Debug\log4net.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\bin\Debug\BookingEmailService.Common.pdb
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\obj\Debug\BookingEmailService.DAL.csprojResolveAssemblyReference.cache
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\obj\Debug\BookingEmailService.DAL.dll
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailService.DAL\obj\Debug\BookingEmailService.DAL.pdb
