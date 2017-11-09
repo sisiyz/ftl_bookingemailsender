@@ -423,6 +423,7 @@ namespace BookingEmailService.DAL
             }
         }
 
+
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)
         {

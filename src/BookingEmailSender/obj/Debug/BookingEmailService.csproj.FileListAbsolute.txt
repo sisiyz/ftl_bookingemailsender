@@ -19,10 +19,15 @@ C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEm
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailSender.exe
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailSender.pdb
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailService.BL.dll
+<<<<<<< HEAD
+=======
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\itextsharp.dll
+>>>>>>> origin/master
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\log4net.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailService.Common.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailService.DAL.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailService.BL.pdb
+C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\itextsharp.xml
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailService.Common.pdb
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\bin\Debug\BookingEmailService.DAL.pdb
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender\obj\Debug\BookingEmailService.csprojResolveAssemblyReference.cache

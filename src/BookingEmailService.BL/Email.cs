@@ -20,6 +20,8 @@ namespace BookingEmailService.BL
         //string ftp_username = ConfigurationManager.AppSettings["ftp_username"];
         //string ftp_password = ConfigurationManager.AppSettings["ftp_password"];
 
+        string local_email_path = ConfigurationManager.AppSettings["local_email_path"];
+
         #region GETHTML
         public string GetReportHtml(OrderDeatils objOrdertails)
         {

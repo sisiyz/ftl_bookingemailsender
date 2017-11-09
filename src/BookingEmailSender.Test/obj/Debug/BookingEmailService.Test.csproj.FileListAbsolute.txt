@@ -17,6 +17,7 @@ C:\Users\Sisi.Han\Desktop\BookingEmailSender\BookingEmailSender.Test\obj\Debug\B
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\bin\Debug\BookingEmailSender.Test.exe.config
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\obj\Debug\BookingEmailSender.Test.exe
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\obj\Debug\BookingEmailSender.Test.pdb
+<<<<<<< HEAD
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\bin\Debug\BookingEmailSender.Test.exe
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\bin\Debug\BookingEmailSender.Test.pdb
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\bin\Debug\BookingEmailService.BL.dll
@@ -32,3 +33,5 @@ C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\obj\Debug\Book
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\obj\Debug\BookingEmailService.Test.csproj.GenerateResource.Cache
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\bin\Debug\NReco.PdfGenerator.dll
 C:\GitProjects\ftl_bookingemailsender\src\BookingEmailSender.Test\bin\Debug\NReco.PdfGenerator.xml
+=======
+>>>>>>> origin/master

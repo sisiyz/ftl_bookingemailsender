@@ -65,6 +65,7 @@ namespace BookingEmailService.BL
 
                         //Transfer(Upload) Email
                         builder = objEmail.GetReportHtml(objOrderDeatils);
+
                         objEmail.TransferEmail(objOrderDeatils, builder,objBookingCentraliseEmailMonitor.email_format, objBookingCentraliseEmailMonitor.booking_centralise_email_monitor_id);
 
                         //Update status to transferred
